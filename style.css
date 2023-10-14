@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+}
+:root{
+    --primary : rgb(16,15,16);
+    --secondary : rgb(255,255,255);
+    --text2 : var(var(--primary));
+    --buttons : rgb(198,54,42);
+    --text1 : rgb(255,255,255,0.8);
+}
+
+.container{
+    width:100%;
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation bar */
+.nav-bar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 50px 0 50px;
+    background-color: var(--primary);
+    position:sticky;
+    top:0;
+}
+
+
+/* Navigation bar */
+.nav-bar .nav-bar-items ul{
+    display:flex;
+    gap:50px;
+    list-style-type: none;
+}
+.nav-bar .nav-bar-items ul li{
+    text-transform:uppercase;
+    font-weight:550;
+    font-size: 14.5px;
+}
+.nav-bar .nav-bar-items ul li a{
+    color:rgb(255,255,255,0.7);
+    transition: all .4s;
+}
+.nav-bar .nav-bar-items ul li a:hover{
+    color:var(--buttons);
+}
+
+/* Main content */
+.main-product{
+    width:95%;
+    height:100vh;
+    display: flex;
+    justify-self: space-around;
+    margin:100px auto -150px auto;
+    padding-left:50px;
+}
+
+/* Texts */
+.left-side h1{
+    font-size: 4.0rem;
+    line-height:1.2;  
+    color:var(--secondary);
+}
+.left-side p{
+    font-size: 18px;
+    margin-top: 30px;
+    line-height:1.6;
+    letter-spacing: 0.2px;
+    color:var(--text1);
+
+}
+
+/* Button */
+.left-side button{
+    margin-top: 40px;
+    font-size: 13px;
+    text-transform:uppercase;
+    font-weight: 600;
+    color:var(--text1);
+    border:none;
+    outline:none;
+    padding: 20px 65px; 
+    border-radius:50px;
+    background-color: var(--buttons);
+    transition: ease .4s;  
+    cursor:pointer; 
+}
+.left-side button:hover{
+    border:2px solid var(--buttons); 
+    color:var(--buttons);
+    background-color: var(--text1);  
+}
+
+/* Product image */
+.right-side img{
+    width:500px;
+    height:570px;
+}
+
+
+/* Product description */
+
+.watch-description{
+    background-color: var(--secondary);
+    display: flex;
+    padding: 200px 50px 0 0;
+}
+.watch-image img{
+    width:630px;
+    height:700px;
+    margin-top: 40px;
+}
+.descriptions h1{
+    font-size: 3.56rem;
+}
+.descriptions .heart .icon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2.0rem;
+    color:var(--secondary);
+    padding:20px;
+    border-radius: 50%;
+    background-color: var(--buttons);
+    border:10px solid rgb(232,48,80);
+}
+.descriptions .heart{
+    display: flex;
+    gap:30px;
+    margin-top: 70px;
+}
+.heart .text p{
+    margin-top: 30px;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    font-size: 16.5px;
+    color:grey;
+}
+
+/* Footer */
+
+.footer{
+    padding:20px;
+    background-color: var(--buttons);
+    color: var(--secondary);
+    text-align: center;
+    font-size: 14px;
+}
